@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sondaggio</title>
+</head>
+
+<body>
+    <h1 id="title">Sondaggio</h1>
+    <p id="description">Fai questo sondaggio se vuoi</p>
+    <form id="survey-form">
+        <fieldset>
+            <legend>Account type</legend>
+            <label for="name" id="name-label">Inserire il nome:
+                <input id="name" type="text" placeholder="Inserire nome" required>
+            </label>
+            <br>
+            <label for="email" id="email-label">Inserire l'email:
+                <input id="email" type="email" placeholder="Inserire email" required>
+            </label>
+            <br>
+            <label for="number" id="number-label">Inserire l'età:
+                <input id="number" type="number" min="3" max="10" placeholder="inserire l'età" required>
+            </label>
+            <br>
+            <!-- Aggiunta delle caselle di spunta -->
+            <legend>Seleziona i tuoi interessi:</legend>
+            <label for="interest1">
+                <input type="checkbox" id="interest1" name="interest" value="sport"> Sport
+            </label>
+            <br>
+            <label for="interest2">
+                <input type="checkbox" id="interest2" name="interest" value="musica"> Musica
+            </label>
+            <br>
+            <label for="interest3">
+                <input type="checkbox" id="interest3" name="interest" value="lettura"> Lettura
+            </label>
+            <br>
+            <label for="interest4">
+                <input type="checkbox" id="interest4" name="interest" value="viaggi"> Viaggi
+            </label>
+            <br>
+            <!-- Fine delle caselle di spunta -->
+            <br>
+
+            <!--Menu a tendina-->
+            <select id="dropdown">
+                <option value="0">Genere</option>
+                <option value="1">Maschio</option>
+                <option value="2">Femmina</option>
+                <option value="3">Trans</option>
+                <option value="4">Crostata</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Would you recommend freeCodeCamp to a friend?</legend>
+            <label for="Definitely"><input id="Definitely" type="radio" name="account-type" class="inline" value="1"
+                    checked>Definitely</label>
+            <label for="Maybe"><input id="Maybe" type="radio" name="account-type" value="2" class="inline">Maybe</label>
+            <label for="Not sure"><input id="Not sure" type="radio" name="account-type" value="3" class="inline">Not
+                sure</label>
+        </fieldset>
+        <fieldset>
+            <legend>What would you like to see improved? </legend>
+            <label><input type="checkbox">Front-end Projects</label>
+            <br>
+            <label><input type="checkbox">Back-end Projects</label>
+            <br>
+            <label><input type="checkbox">Data Visualization</label>
+            <br>
+            <label><input type="checkbox">Challenges</label>
+            <br>
+            <label><input type="checkbox">Open Source Community</label>
+            <br>
+            <label><input type="checkbox">Gitter help rooms</label>
+            <br>
+            <label><input type="checkbox">Videos</label>
+            <br>
+            <br>
+
+            <label for="bio"> Provide a bio:
+                <br>
+                <textarea id="bio" name="bio" rows="3" cols="30"
+                    placeholder="I like coding on the beach..."> </textarea>
+            </label>
+
+        </fieldset>
+        <br>
+        <input id="submit" type="submit" value="submit" />
+    </form>
+</body>
+
+</html>
